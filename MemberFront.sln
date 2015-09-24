@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "MemberFront", "MemberFront.njsproj", "{2855303E-B6D0-4FB8-8277-DA34D174D8C0}"
+EndProject
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "MemberBack", "..\MemberBack\MemberBack.njsproj", "{EFBD3AFE-635B-4B9B-83BD-851E2C0BB67A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2855303E-B6D0-4FB8-8277-DA34D174D8C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2855303E-B6D0-4FB8-8277-DA34D174D8C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2855303E-B6D0-4FB8-8277-DA34D174D8C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2855303E-B6D0-4FB8-8277-DA34D174D8C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EFBD3AFE-635B-4B9B-83BD-851E2C0BB67A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFBD3AFE-635B-4B9B-83BD-851E2C0BB67A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EFBD3AFE-635B-4B9B-83BD-851E2C0BB67A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EFBD3AFE-635B-4B9B-83BD-851E2C0BB67A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

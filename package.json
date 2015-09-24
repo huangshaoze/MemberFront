@@ -1,0 +1,10 @@
+{
+  "name": "MemberFront",
+  "version": "0.0.0",
+  "description": "MemberFront",
+  "main": "server.js",
+  "author": {
+    "name": "14033254",
+    "email": ""
+  }
+}

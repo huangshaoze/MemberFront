@@ -1,0 +1,2 @@
+E:\SN_MEMBER\MemberFront\bin\Microsoft.NodejsTools.WebRole.dll
+E:\sn_member\PROJECT\MemberFront\bin\Microsoft.NodejsTools.WebRole.dll

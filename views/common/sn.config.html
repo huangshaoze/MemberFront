@@ -1,0 +1,94 @@
+{{if settings.env == 'prd'}}
+<script>
+    var sn = sn || {
+	            'context': '/emall',
+                'vssDomain': '{{settings.appDomain}}',
+                'storeDomain': 'http://store.suning.com',
+                'imageDomain': '{{settings.imageDomain}}',
+                'resDomain': 'http://res.suning.cn',
+                'vcsDomain': 'http://vcs.suning.com'
+            }
+    {{if isPhone}}
+        var passport_config = {
+            base: "https://aq.suning.com/asc/",
+            loginTheme: "b2c_pop"
+        };
+        {{else}}
+        var passport_config = {
+	        base: "https://ssl.suning.com/webapp/wcs/stores/servlet/",
+            loginTheme: "b2c_pop"
+        };
+        {{/if}}
+</script>
+{{else if settings.env == 'pre'}}
+
+<script>
+    var sn = sn || {
+	            'context': '/emall',
+                'vssDomain': '{{settings.appDomain}}',
+                'storeDomain': 'http://store.suning.com',
+                'imageDomain': '{{settings.imageDomain}}',
+                'resDomain': 'http://preres.suning.cn',
+                'vcsDomain': 'http://vcs.suning.com'
+            }
+    {{if isPhone}}
+        var passport_config = {
+            base: "https://aqpre.cnsuning.com/asc/",
+            loginTheme: "b2c_pop"
+        };
+        {{else}}
+        var passport_config = {
+	        base: "https://sslpre.cnsuning.com/webapp/wcs/stores/servlet/",
+            loginTheme: "b2c_pop"
+        };
+        {{/if}}
+</script>
+
+{{else if settings.env == 'sit'}}
+<script>
+    var sn = sn || {
+	            'context': '/emall',
+                'vssDomain': '{{settings.appDomain}}',
+                'storeDomain': 'http://store.suning.com',
+                'imageDomain': '{{settings.imageDomain}}',
+                'resDomain': 'http://sitres.suning.cn',
+                'vcsDomain': 'http://vcs.suning.com'
+            }
+    {{if isPhone}}
+        var passport_config = {
+            base: "https://aqsit.cnsuning.com/asc/",
+            loginTheme: "b2c_pop"
+        };
+        {{else}}
+        var passport_config = {
+	        base: "https://sslsit.cnsuning.com/webapp/wcs/stores/servlet/",
+            loginTheme: "b2c_pop"
+        };
+        {{/if}}
+</script>
+{{else}}
+<script>
+    var sn = sn || {
+	            'context': '/emall',
+                'vssDomain': '{{settings.appDomain}}',
+                'storeDomain': 'http://store.suning.com',
+                'imageDomain': '{{settings.imageDomain}}',
+                'resDomain': 'http://res.suning.cn',
+                'vcsDomain': 'http://vcs.suning.com',
+	            'passportLogon': 'https://passportpre.cnsuning.com/ids/login',
+	            'passportLogoff': 'https://passportpre.cnsuning.com/ids/logout'
+            }
+    {{if isPhone}}
+        var passport_config = {
+            base: "https://aqsit.cnsuning.com/asc/",
+            loginTheme: "b2c_pop"
+        };
+        {{else}}
+        var passport_config = {
+            base: "https://sslpre.cnsuning.com/webapp/wcs/stores/servlet/",
+            loginTheme: "b2c_pop"
+        };
+        {{/if}}
+
+</script>
+{{/if}}
