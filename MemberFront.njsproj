@@ -60,7 +60,6 @@
     <Content Include="api\newTask\static\css.css" />
     <Content Include="api\newTask\views\index.html" />
     <Content Include="package.json" />
-    <Content Include="README.md" />
     <Content Include="views\40x.html" />
     <Content Include="views\50x.html" />
     <Content Include="views\common\FOOT.html" />
@@ -72,6 +71,8 @@
     <Folder Include="api\newTask\controller\" />
     <Folder Include="api\newTask\views\" />
     <Folder Include="api\newTask\static\" />
+    <Folder Include="api\项目1\" />
+    <Folder Include="api\项目2\" />
     <Folder Include="config\" />
     <Folder Include="lib\" />
     <Folder Include="controller\" />

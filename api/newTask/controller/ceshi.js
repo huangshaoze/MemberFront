@@ -1,5 +1,4 @@
 ﻿'user strict';
-var Q = require("q");
 var _ = require('underscore');
 
 //project config
@@ -13,6 +12,7 @@ module.exports = newTaskController;
 function newTaskController(router) {
 
 }
+
 newTaskController.prototype = {
     //私有变量
     constructor: newTaskController,
@@ -21,8 +21,8 @@ newTaskController.prototype = {
         //基本数据
         var data = {};
         data = _.extend(data, req._PRFS);//公共头尾
-        data = _.extend(data, COM.HTMLHEAD());//
-        data = _.extend(data, req._EXT_DATA);
+        data = _.extend(data, COM.HTMLHEAD());//配置标题
+        data = _.extend(data, req._EXT_DATA);//用户相关数据
         
         superagent.get('http://product.suning.com/pds-web/ajax/itemInfo_928635487.html', { 1: 1 }).done(function () {
             console.log("OK");

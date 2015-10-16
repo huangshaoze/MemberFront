@@ -8,6 +8,7 @@ var del = require('del');
 var minifyInline = require('gulp-minify-inline');
 var minifyHtml = require('gulp-minify-html');
 var size = require('gulp-size');
+var gutil = require('gulp-util');
 
 
 function __task(name) {
@@ -27,10 +28,9 @@ function __task(name) {
 }
 
 gulp.task('default', function () {
-    console.log("请输入初始化项目名称");
+    gutil.log(gutil.colors.bgRed("请输入初始化项目名称"));
 });
 var apiDir = path.join(__dirname, 'api');
-console.log(apiDir);
 var list = require('./lib/scanFolder')(apiDir);
 _.each(list.folders, function (file, index) {
     (function (file) {
@@ -38,9 +38,9 @@ _.each(list.folders, function (file, index) {
             var arr = file.split('\\');
             var name = arr[arr.length - 2];
             gulp.task(name, function () {
-                console.log(name + "启动成功");
+                gutil.log(gutil.colors.blue(name + " 项目开始启动"));
                 del(path.join('views', name));
-                console.log(name + 'VIEW删除成功');
+                gutil.log(gutil.colors.blue(name + '  [VIEW]  删除成功'));
                 __task(name);
                 gulp.watch('api/' + name + '/views/**.*', function (event) {
                     __task(name);
