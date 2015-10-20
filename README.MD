@@ -20,4 +20,6 @@
 ![image](https://github.com/weiqingting/MemberFront/blob/master/readme_images/4.png)
 ![image](https://github.com/weiqingting/MemberFront/blob/master/readme_images/5.png)
 ![image](https://github.com/weiqingting/MemberFront/blob/master/readme_images/6.png)
+运行app.js
+----
 ![image](https://github.com/weiqingting/MemberFront/blob/master/readme_images/7.png)
